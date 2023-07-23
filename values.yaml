@@ -18,3 +18,12 @@ global:
       name: "postgres"
     es:
       enabled: false
+    redis:
+      host: redis.minikube
+  secrets:
+    db:
+      password: "password"
+    app:
+      secret_key: "secret_key"
+      superuser:
+        password: "password"
